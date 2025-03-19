@@ -64,8 +64,18 @@
         </div>
         <div id="map"></div>
     </main>
+    
     <script>
+        // Set Mapbox Access Token
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2VzYXJ2MyIsImEiOiJjbTd4d2cwN2wwM201MmtvY2tjNjBzdWZjIn0.RSGwfOSbzdhFZU_9zQnc1A';
+
+        // Initialize Mapbox map
+        let map = new mapboxgl.Map({
+            container: 'map', // ID of the div where the map will go
+            style: 'mapbox://styles/mapbox/satellite-v9', // Map style (satellite)
+            zoom: 5.5, // Initial zoom level
+            center: [138, 38] // Centering on Japan
+        });
     </script>
 </body>
 </html>
-
