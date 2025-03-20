@@ -79,9 +79,9 @@
 
         async function geojsonFetch() {
             let response, earthquakes, japan;
-            response = await fetch('assets/earthquakes.geojson');
+            response = await fetch('Assets/earthquakes.geojson');
             earthquakes = await response.json();
-            response = await fetch('assets/japan.json');
+            response = await fetch('Assets/japan.json');
             japan = await response.json();
 
             map.on('load', function () {
