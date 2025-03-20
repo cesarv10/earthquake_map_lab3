@@ -78,7 +78,7 @@
         });
 
         async function geojsonFetch() {
-            let response, earthquakes, japan;
+            let response, earthquakes, japan; 
             response = await fetch('Assets/earthquakes.geojson');
             earthquakes = await response.json();
             response = await fetch('Assets/japan.json');
